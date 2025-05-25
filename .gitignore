@@ -1,0 +1,100 @@
+## === FICHIERS À INCLURE (analyse) ===
+!*.wdd
+!*.wda
+!*.ana
+
+# === FICHIERS À IGNORER (données, compilations, temporaires) ===
+
+# Données HyperFileSQL
+*.fic                   # Exclut tous les .FIC par défaut
+!*.ana/*.fic            # Sauf ceux dans le dossier .ana (ajoutez cette ligne)
+*.ficmmo
+*.ficmmo$
+*.ficx
+*.ftx
+*.ftx$
+*.idx
+*.id$
+*.mmo
+*.ndx
+*.ndx$
+*.rep
+
+
+*.exe
+
+*.EXE
+
+# Fichiers de runtime et logs
+*.trc
+*.tmp
+*.log
+*.bak
+*.err
+*.msg$
+
+# Fichiers générés (compilation, projet, etc.)
+*.wdf
+*.twd
+*.pvm
+*.wdk
+*.wdz
+*.pck
+*.res
+*.pc$
+*.st$
+*.rpt
+*.rti
+*.rte
+*.rto
+*.rti$
+*.rto$
+*.env
+*.cpl
+
+# Sauvegardes / anciens fichiers
+*.~*
+*.zip
+*.bck
+*.old
+*.sav
+
+# Fichiers utilisateurs et machine
+*.suo
+*.user
+*.ini
+*.cfg
+*.iml
+
+# Dossiers générés automatiquement
+/Backup/
+/EXE/
+/*.log/
+/*.tmp/
+/*.ndx/
+/*.fic/
+/*.mmo/
+/*.trc/
+/*.twd/
+/*.rpt/
+/*.rti/
+/*.rto/
+/*.err/
+/*.msg/
+/*.pvm/
+/*.pc/
+/*.st/
+/*.res/
+
+# Fichiers spécifiques aux IDE ou OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / autres si tu fais du JS à côté
+node_modules/
+dist/
+
+
+Install/SYSINFOCOMPTA.EXE
