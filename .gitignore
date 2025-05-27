@@ -1,39 +1,46 @@
-## === FICHIERS À INCLURE (analyse) ===
-!*.wdd
-!*.wda
-!*.ana
+## === INCLUSIONS SPÉCIALES POUR .ana ===
+!*.ana/
+!*.ana/*.fic
+!*.ana/*.mmo
+!*.ana/*.ndx
+!*.ana/*.wdd
+!*.ana/*.wda
+!*.ana/*.ana
 
-# === FICHIERS À IGNORER (données, compilations, temporaires) ===
+# Exclure les fichiers de sauvegarde dans .ana
+*.ana/*sauvegarde*
+*.ana/lastsave*
+*.ana/*.bck
+*.ana/*.old
+*.ana/*.tmp
+*.ana/*sauv*
+
+## === FICHIERS À IGNORER (généraux) ===
 
 # Données HyperFileSQL
-*.fic                   # Exclut tous les .FIC par défaut
-!*.ana/*.fic            # Sauf ceux dans le dossier .ana (ajoutez cette ligne)
-*.ficmmo
-*.ficmmo$
-*.ficx
-*.ftx
-*.ftx$
-*.idx
-*.id$
+*.fic
 *.mmo
 *.ndx
-*.ndx$
+*.ficmmo
+*.ficx
+*.ftx
+*.idx
+*.id$
 *.rep
 
+# Exécutables
+**/*.exe
 
-*.exe
-
-*.EXE
-
-# Fichiers de runtime et logs
+# Fichiers de logs, temporaires et runtime
 *.trc
 *.tmp
 *.log
 *.bak
 *.err
 *.msg$
+*.env
 
-# Fichiers générés (compilation, projet, etc.)
+# Fichiers générés par WinDev
 *.wdf
 *.twd
 *.pvm
@@ -49,52 +56,24 @@
 *.rto
 *.rti$
 *.rto$
-*.env
-*.cpl
 
-# Sauvegardes / anciens fichiers
-*.~*
-*.zip
-*.bck
-*.old
-*.sav
-
-# Fichiers utilisateurs et machine
+# Fichiers spécifiques machine / utilisateur
 *.suo
 *.user
 *.ini
 *.cfg
 *.iml
 
-# Dossiers générés automatiquement
+# Dossiers WinDev
 /Backup/
 /EXE/
-/*.log/
-/*.tmp/
-/*.ndx/
-/*.fic/
-/*.mmo/
-/*.trc/
-/*.twd/
-/*.rpt/
-/*.rti/
-/*.rto/
-/*.err/
-/*.msg/
-/*.pvm/
-/*.pc/
-/*.st/
-/*.res/
 
-# Fichiers spécifiques aux IDE ou OS
+# Environnements IDE / OS
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Node / autres si tu fais du JS à côté
+# Pour projets JS éventuels
 node_modules/
 dist/
-
-
-Install/SYSINFOCOMPTA.EXE
