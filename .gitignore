@@ -1,21 +1,21 @@
-## === INCLUSIONS SPÉCIALES POUR .ana ===
-!*.ana/
-!*.ana/*.fic
-!*.ana/*.mmo
-!*.ana/*.ndx
-!*.ana/*.wdd
-!*.ana/*.wda
-!*.ana/*.ana
+## === INCLUSIONS DANS .ana (doivent venir AVANT les exclusions générales) ===
+!**/.ana/
+!**/.ana/*.fic
+!**/.ana/*.mmo
+!**/.ana/*.ndx
+!**/.ana/*.wdd
+!**/.ana/*.wda
+!**/.ana/*.ana
 
 # Exclure les fichiers de sauvegarde dans .ana
-*.ana/*sauvegarde*
-*.ana/lastsave*
-*.ana/*.bck
-*.ana/*.old
-*.ana/*.tmp
-*.ana/*sauv*
+**/.ana/*sauvegarde*
+**/.ana/lastsave*
+**/.ana/*.bck
+**/.ana/*.old
+**/.ana/*.tmp
+**/.ana/*sauv*
 
-## === FICHIERS À IGNORER (généraux) ===
+## === EXCLUSIONS GÉNÉRALES (doivent venir APRÈS) ===
 
 # Données HyperFileSQL
 *.fic
@@ -29,9 +29,9 @@
 *.rep
 
 # Exécutables
-**/*.exe
+*.exe
 
-# Fichiers de logs, temporaires et runtime
+# Fichiers logs/temp
 *.trc
 *.tmp
 *.log
@@ -57,23 +57,23 @@
 *.rti$
 *.rto$
 
-# Fichiers spécifiques machine / utilisateur
+# Fichiers utilisateurs/machine
 *.suo
 *.user
 *.ini
 *.cfg
 *.iml
 
-# Dossiers WinDev
+# Dossiers générés
 /Backup/
 /EXE/
 
-# Environnements IDE / OS
+# IDE/OS
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Pour projets JS éventuels
+# Node (si applicable)
 node_modules/
 dist/
