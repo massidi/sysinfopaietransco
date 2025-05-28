@@ -1,0 +1,6 @@
+[GLOBAL]
+VERSION=1
+TAG=SYSINFOPAIE
+[WDREPORT]
+LOCAL_DIR=C:\Users\Public\SYSINFOPAIE\Etats et Requêtes
+GLOBAL_DIR=C:\Users\Public\SYSINFOPAIE\Etats et Requêtes Partagés
